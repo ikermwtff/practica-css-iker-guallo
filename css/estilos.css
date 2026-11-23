@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ---------- SELECTOR UNIVERSAL ---------- */
 * {
   margin: 0;
@@ -28,6 +29,9 @@ p {
 /* =========================================================
    ENCABEZADO (fondo con imagen)
    ========================================================= */
+=======
+
+>>>>>>> 64e6bcd236f5b916953a5564e9b93c01b27800f0
 .encabezado {
   background-color: #273a41;
   background-image: url("../imagenes/fondo.jpg");
@@ -41,7 +45,11 @@ p {
   border-bottom: 6px solid #0b8a8a;
 }
 
+<<<<<<< HEAD
 /* Logo dentro de un círculo crema */
+=======
+
+>>>>>>> 64e6bcd236f5b916953a5564e9b93c01b27800f0
 .logo {
   width: 130px;
   height: 130px;
@@ -52,7 +60,10 @@ p {
   margin-bottom: 12px;
 }
 
+<<<<<<< HEAD
 /* Color RGB y transformación de texto */
+=======
+>>>>>>> 64e6bcd236f5b916953a5564e9b93c01b27800f0
 h1 {
   color: rgb(255, 255, 255);
   font-size: 42px;
@@ -61,7 +72,11 @@ h1 {
   letter-spacing: 4px;
 }
 
+<<<<<<< HEAD
 /* SELECTOR HERMANO ADYACENTE: el párrafo que sigue al h1 */
+=======
+
+>>>>>>> 64e6bcd236f5b916953a5564e9b93c01b27800f0
 h1 + p {
   color: hsl(178, 50%, 70%);
   font-style: italic;
@@ -70,9 +85,13 @@ h1 + p {
   margin: 6px 0 22px;
 }
 
+<<<<<<< HEAD
 /* =========================================================
    NAVEGACIÓN
    ========================================================= */
+=======
+
+>>>>>>> 64e6bcd236f5b916953a5564e9b93c01b27800f0
 nav {
   background-color: rgba(39, 58, 65, 0.85);
   padding: 12px;
@@ -82,7 +101,11 @@ nav {
   margin: 0 auto;
 }
 
+<<<<<<< HEAD
 /* SELECTOR HIJO DIRECTO */
+=======
+
+>>>>>>> 64e6bcd236f5b916953a5564e9b93c01b27800f0
 nav > a {
   color: white;
   text-decoration: none;
@@ -93,19 +116,30 @@ nav > a {
   display: inline-block;
 }
 
+<<<<<<< HEAD
 /* PSEUDOCLASE :hover en el menú */
+=======
+>>>>>>> 64e6bcd236f5b916953a5564e9b93c01b27800f0
 nav > a:hover {
   background-color: #0b8a8a;
   color: #ffffff;
 }
 
+<<<<<<< HEAD
 /* PSEUDOCLASE :active en el menú */
+=======
+
+>>>>>>> 64e6bcd236f5b916953a5564e9b93c01b27800f0
 nav > a:active {
   background-color: #f2b441;
   color: #273a41;
 }
 
+<<<<<<< HEAD
 /* Franja de cifras */
+=======
+
+>>>>>>> 64e6bcd236f5b916953a5564e9b93c01b27800f0
 .cifras {
   list-style: none;
   margin-top: 25px;
@@ -127,9 +161,13 @@ nav > a:active {
   color: #f2b441;
 }
 
+<<<<<<< HEAD
 /* =========================================================
    ESTRUCTURA GENERAL DE SECCIONES
    ========================================================= */
+=======
+
+>>>>>>> 64e6bcd236f5b916953a5564e9b93c01b27800f0
 section {
   background-color: #ffffff;
   width: 90%;
@@ -140,14 +178,21 @@ section {
   border: 1px solid #e0d8c8;
 }
 
+<<<<<<< HEAD
 /* SELECTOR DE CLASE: contenedor (padding, altura y anchura) */
+=======
+
+>>>>>>> 64e6bcd236f5b916953a5564e9b93c01b27800f0
 .contenedor {
   height: auto;
   padding-top: 35px;
   padding-bottom: 35px;
 }
 
+<<<<<<< HEAD
 /* Títulos de sección con color HSL */
+=======
+>>>>>>> 64e6bcd236f5b916953a5564e9b93c01b27800f0
 h2 {
   color: hsl(197, 25%, 20%);
   font-size: 30px;
@@ -165,25 +210,41 @@ h3 {
   margin: 20px 0 10px;
 }
 
+<<<<<<< HEAD
 /* SELECTOR DESCENDIENTE */
+=======
+
+>>>>>>> 64e6bcd236f5b916953a5564e9b93c01b27800f0
 section p {
   text-align: justify;
   margin-bottom: 12px;
 }
 
+<<<<<<< HEAD
 /* SELECTOR HERMANOS GENERALES: todos los p que siguen a un h2 */
+=======
+
+>>>>>>> 64e6bcd236f5b916953a5564e9b93c01b27800f0
 h2 ~ p {
   letter-spacing: 0.5px;
 }
 
+<<<<<<< HEAD
 /* SELECTOR DE CLASE */
+=======
+
+>>>>>>> 64e6bcd236f5b916953a5564e9b93c01b27800f0
 .destacado {
   color: hsl(180, 85%, 29%);
   font-weight: bold;
   text-decoration: underline;
 }
 
+<<<<<<< HEAD
 /* Tarjetas (bordes y márgenes) */
+=======
+
+>>>>>>> 64e6bcd236f5b916953a5564e9b93c01b27800f0
 .tarjeta {
   display: inline-block;
   vertical-align: top;
@@ -215,9 +276,13 @@ h2 ~ p {
   background-color: #eef7f6;
 }
 
+<<<<<<< HEAD
 /* =========================================================
    NOSOTROS (selector de ID)
    ========================================================= */
+=======
+
+>>>>>>> 64e6bcd236f5b916953a5564e9b93c01b27800f0
 #nosotros {
   background-color: #fbf9f4;
   border-left: 8px solid #273a41;
@@ -232,7 +297,11 @@ h2 ~ p {
   text-align: center;
 }
 
+<<<<<<< HEAD
 /* Lista de valores con pseudoclases */
+=======
+
+>>>>>>> 64e6bcd236f5b916953a5564e9b93c01b27800f0
 ul.lista-valores {
   text-align: left;
   margin: 10px 0 20px 40px;
@@ -243,24 +312,39 @@ ul.lista-valores {
   margin-bottom: 4px;
 }
 
+<<<<<<< HEAD
 /* PSEUDOCLASE :first-child */
+=======
+
+>>>>>>> 64e6bcd236f5b916953a5564e9b93c01b27800f0
 .lista-valores li:first-child {
   color: #0b8a8a;
   font-weight: bold;
 }
 
+<<<<<<< HEAD
 /* PSEUDOCLASE :last-child */
+=======
+
+>>>>>>> 64e6bcd236f5b916953a5564e9b93c01b27800f0
 .lista-valores li:last-child {
   color: #b5651d;
 }
 
+<<<<<<< HEAD
 /* PSEUDOCLASE :nth-child() */
+=======
+>>>>>>> 64e6bcd236f5b916953a5564e9b93c01b27800f0
 .lista-valores li:nth-child(2) {
   background-color: #e6f3f2;
   border-radius: 6px;
 }
 
+<<<<<<< HEAD
 /* Imágenes que funcionan como enlace */
+=======
+
+>>>>>>> 64e6bcd236f5b916953a5564e9b93c01b27800f0
 .marcas {
   text-align: center;
   margin-top: 20px;
@@ -293,6 +377,7 @@ ul.lista-valores {
   opacity: 0.85;
 }
 
+<<<<<<< HEAD
 /* =========================================================
    SERVICIOS (fondo con color)
    ========================================================= */
@@ -551,6 +636,9 @@ button:active {
 /* =========================================================
    ENLACES GENERALES
    ========================================================= */
+=======
+
+>>>>>>> 64e6bcd236f5b916953a5564e9b93c01b27800f0
 a:hover {
   color: #0b8a8a;
   text-decoration: underline;
@@ -569,9 +657,13 @@ section .volver {
   font-weight: bold;
 }
 
+<<<<<<< HEAD
 /* =========================================================
    PIE DE PÁGINA
    ========================================================= */
+=======
+
+>>>>>>> 64e6bcd236f5b916953a5564e9b93c01b27800f0
 footer {
   background-color: #273a41;
   color: white;
@@ -603,4 +695,8 @@ footer p {
 
 .enlaces-externos a:hover {
   color: #f2b441;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 64e6bcd236f5b916953a5564e9b93c01b27800f0
