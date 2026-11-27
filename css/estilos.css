@@ -2,9 +2,10 @@
    Construyendo Sueños - Constructora
    Hoja de estilos externa
    Práctica: Aplicación de estilos y propiedades CSS
-   Paleta tomada del logo:
-     Verde azulado  #0b8a8a   Pizarra  #273a41
-     Crema          #f5f1e8   Ámbar    #f2b441 (acento obra)
+   Paleta inspirada en sitios de constructoras:
+     Azul marino   #00294e   Azul noche  #001426
+     Naranja obra  #f77c0c   Coral       #f18052
+     Gris claro    #f3f3f3   Gris texto  #555555
    ========================================================= */
 
 /* ---------- SELECTOR UNIVERSAL ---------- */
@@ -16,14 +17,15 @@
 
 /* ---------- SELECTOR DE ETIQUETA: body (colores HEX y fuentes) ---------- */
 body {
-  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
-  background-color: #f5f1e8;
-  color: #273a41;
+  font-family: "Segoe UI", Roboto, Arial, Helvetica, sans-serif;
+  background-color: #f3f3f3;
+  color: #555555;
 }
 
 /* ---------- SELECTOR AGRUPADO ---------- */
 h1, h2, h3 {
-  font-family: "Trebuchet MS", Verdana, sans-serif;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  font-weight: bold;
 }
 
 /* ---------- SELECTOR DE ETIQUETA: p (propiedades de texto) ---------- */
@@ -31,109 +33,120 @@ p {
   font-size: 16px;
   font-style: normal;
   line-height: 1.8;
-  word-spacing: 3px;
+  word-spacing: 2px;
 }
 
 /* =========================================================
    ENCABEZADO (fondo con imagen)
    ========================================================= */
 .encabezado {
-  background-color: #273a41;
+  background-color: #00294e;
   background-image: url("../imagenes/fondo.jpg");
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center;
   background-size: cover;
   background-attachment: scroll;
   color: rgb(255, 255, 255);
   text-align: center;
-  padding: 35px 20px 30px;
-  border-bottom: 6px solid #0b8a8a;
+  padding: 0 20px 45px;
+  border-bottom: 5px solid #f77c0c;
 }
 
-/* Logo dentro de un círculo crema */
+/* Logo en un recuadro blanco */
 .logo {
-  width: 130px;
-  height: 130px;
-  padding: 14px;
-  background-color: #f5f1e8;
-  border: 4px solid #0b8a8a;
-  border-radius: 50%;
-  margin-bottom: 12px;
+  width: 120px;
+  height: 120px;
+  padding: 12px;
+  background-color: #ffffff;
+  border: 3px solid #f77c0c;
+  border-radius: 6px;
+  margin-top: 35px;
+  margin-bottom: 18px;
 }
 
 /* Color RGB y transformación de texto */
 h1 {
   color: rgb(255, 255, 255);
-  font-size: 42px;
+  font-size: 44px;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 6px;
 }
 
-/* SELECTOR HERMANO ADYACENTE: el párrafo que sigue al h1 */
+/* SELECTOR HERMANO ADYACENTE: el eslogan que sigue al h1 (caja blanca) */
 h1 + p {
-  color: hsl(178, 50%, 70%);
-  font-style: italic;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.92);
+  color: hsl(208, 100%, 15%);
   font-size: 19px;
   font-weight: bold;
-  margin: 6px 0 22px;
+  font-style: normal;
+  padding: 10px 26px;
+  margin: 14px 0 26px;
+  border-left: 6px solid #f77c0c;
 }
 
 /* =========================================================
    NAVEGACIÓN
    ========================================================= */
 nav {
-  background-color: rgba(39, 58, 65, 0.85);
-  padding: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 30px;
-  max-width: 920px;
+  background-color: rgba(0, 20, 38, 0.92);
+  padding: 10px;
+  border-top: 3px solid #f77c0c;
+  max-width: 980px;
   margin: 0 auto;
 }
 
 /* SELECTOR HIJO DIRECTO */
 nav > a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
   font-weight: bold;
-  margin: 8px;
-  padding: 6px 14px;
-  border-radius: 20px;
+  letter-spacing: 2px;
+  margin: 4px 6px;
+  padding: 8px 12px;
   display: inline-block;
+  border-bottom: 3px solid transparent;
 }
 
 /* PSEUDOCLASE :hover en el menú */
 nav > a:hover {
-  background-color: #0b8a8a;
-  color: #ffffff;
+  color: #f77c0c;
+  text-decoration: none;
+  border-bottom-color: #f77c0c;
 }
 
 /* PSEUDOCLASE :active en el menú */
 nav > a:active {
-  background-color: #f2b441;
-  color: #273a41;
+  background-color: #f77c0c;
+  color: #ffffff;
 }
 
 /* Franja de cifras */
 .cifras {
   list-style: none;
-  margin-top: 25px;
+  margin-top: 30px;
 }
 
 .cifras li {
   display: inline-block;
   width: 220px;
   margin: 8px;
-  padding: 12px;
-  background-color: rgba(11, 138, 138, 0.85);
-  border-radius: 10px;
-  font-size: 15px;
+  padding: 16px 12px;
+  background-color: rgba(0, 41, 78, 0.88);
+  border-top: 4px solid #f77c0c;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .cifras strong {
   display: block;
-  font-size: 30px;
-  color: #f2b441;
+  font-size: 34px;
+  color: #f77c0c;
+  letter-spacing: 0;
 }
 
 /* =========================================================
@@ -143,35 +156,35 @@ section {
   background-color: #ffffff;
   width: 90%;
   max-width: 1100px;
-  margin: 30px auto;
-  padding: 30px;
-  border-radius: 12px;
-  border: 1px solid #e0d8c8;
+  margin: 35px auto;
+  padding: 40px;
+  border-radius: 4px;
+  border: 1px solid #e2e8f0;
 }
 
 /* SELECTOR DE CLASE: contenedor (padding, altura y anchura) */
 .contenedor {
   height: auto;
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding-top: 45px;
+  padding-bottom: 45px;
 }
 
-/* Títulos de sección con color HSL */
+/* Títulos de sección con color HSL y barra naranja */
 h2 {
-  color: hsl(197, 25%, 20%);
+  color: hsl(208, 100%, 15%);
   font-size: 30px;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 15px;
-  padding-bottom: 10px;
-  border-bottom: 3px dashed #0b8a8a;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  padding-left: 16px;
+  border-left: 6px solid #f77c0c;
 }
 
 h3 {
-  color: #0b8a8a;
-  font-size: 21px;
-  margin: 20px 0 10px;
+  color: #00294e;
+  font-size: 20px;
+  margin: 22px 0 10px;
 }
 
 /* SELECTOR DESCENDIENTE */
@@ -182,12 +195,13 @@ section p {
 
 /* SELECTOR HERMANOS GENERALES: todos los p que siguen a un h2 */
 h2 ~ p {
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
+  color: #6c8092;
 }
 
 /* SELECTOR DE CLASE */
 .destacado {
-  color: hsl(180, 85%, 29%);
+  color: hsl(28, 94%, 51%);
   font-weight: bold;
   text-decoration: underline;
 }
@@ -198,38 +212,43 @@ h2 ~ p {
   vertical-align: top;
   width: 300px;
   min-height: 170px;
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
-  border-color: #0b8a8a;
-  border-radius: 12px;
+  border-color: #e2e8f0;
+  border-top: 4px solid #00294e;
+  border-radius: 4px;
   background-color: #ffffff;
   margin: 12px;
   margin-top: 15px;
   margin-bottom: 25px;
-  padding: 20px;
+  padding: 24px 20px;
   text-align: center;
 }
 
 .tarjeta h3 {
   margin-top: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 17px;
 }
 
 .tarjeta p {
   text-align: center;
   font-size: 15px;
+  color: #6c8092;
 }
 
 .tarjeta:hover {
-  border-color: #f2b441;
-  background-color: #eef7f6;
+  border-top-color: #f77c0c;
+  background-color: #f7f9fb;
 }
 
 /* =========================================================
    NOSOTROS (selector de ID)
    ========================================================= */
 #nosotros {
-  background-color: #fbf9f4;
-  border-left: 8px solid #273a41;
+  background-color: #ffffff;
+  border-left: 6px solid #00294e;
   text-align: center;
 }
 
@@ -254,25 +273,26 @@ ul.lista-valores {
 
 /* PSEUDOCLASE :first-child */
 .lista-valores li:first-child {
-  color: #0b8a8a;
+  color: #00294e;
   font-weight: bold;
 }
 
 /* PSEUDOCLASE :last-child */
 .lista-valores li:last-child {
-  color: #b5651d;
+  color: #f77c0c;
+  font-weight: bold;
 }
 
 /* PSEUDOCLASE :nth-child() */
 .lista-valores li:nth-child(2) {
-  background-color: #e6f3f2;
-  border-radius: 6px;
+  background-color: #eef2f6;
+  border-left: 4px solid #00294e;
 }
 
 /* Imágenes que funcionan como enlace */
 .marcas {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .marcas a {
@@ -282,7 +302,7 @@ ul.lista-valores {
 .nota {
   text-align: center;
   font-style: italic;
-  color: #5b6b70;
+  color: #888888;
 }
 
 #nosotros .nota {
@@ -293,12 +313,13 @@ ul.lista-valores {
   width: 280px;
   height: 196px;
   margin: 10px;
-  border: 4px double #273a41;
-  border-radius: 10px;
+  border: 4px solid #ffffff;
+  outline: 1px solid #e2e8f0;
+  border-radius: 4px;
 }
 
 .imagen-enlace:hover {
-  border-color: #0b8a8a;
+  border-color: #f77c0c;
   opacity: 0.85;
 }
 
@@ -306,12 +327,12 @@ ul.lista-valores {
    SERVICIOS (fondo con color)
    ========================================================= */
 #servicios {
-  background-color: hsl(177, 40%, 94%);
+  background-color: hsl(210, 40%, 96%);
   text-align: center;
 }
 
 #servicios > p {
-  text-align: center;
+  text-align: left;
 }
 
 /* Lista ordenada del proceso */
@@ -319,18 +340,18 @@ ol.lista-proceso {
   display: inline-block;
   text-align: left;
   margin: 10px auto;
-  padding: 15px 20px 15px 45px;
-  border: 2px dotted #273a41;
-  border-radius: 8px;
+  padding: 18px 24px 18px 50px;
+  border: 2px dashed #00294e;
+  border-radius: 4px;
   background-color: #ffffff;
 }
 
 .lista-proceso li {
-  padding: 4px 0;
+  padding: 5px 0;
 }
 
 .lista-proceso li:nth-child(odd) {
-  color: #076a6b;
+  color: #00294e;
   font-weight: bold;
 }
 
@@ -338,44 +359,47 @@ ol.lista-proceso {
    TABLA DE PROYECTOS
    ========================================================= */
 table {
-  width: 95%;
-  margin: 20px auto;
+  width: 100%;
+  margin: 25px auto;
   border-collapse: collapse;
 }
 
 th, td {
-  border: 1px solid #273a41;
-  padding: 12px;
+  border: 1px solid #e2e8f0;
+  padding: 14px;
   text-align: center;
 }
 
 th {
-  background-color: #273a41;
+  background-color: #00294e;
   color: white;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  border-bottom: 3px solid #f77c0c;
 }
 
 tr:nth-child(even) {
-  background-color: #eef3f2;
+  background-color: #f3f6f9;
 }
 
 tr:hover td {
-  background-color: #d4ecea;
+  background-color: #fff1e4;
 }
 
 tr td:first-child {
   font-weight: bold;
+  color: #00294e;
   text-align: left;
 }
 
 .entregado {
-  color: rgb(11, 138, 138);
+  color: rgb(0, 41, 78);
   font-weight: bold;
 }
 
 .ejecucion {
-  color: rgb(181, 101, 29);
+  color: rgb(247, 124, 12);
   font-weight: bold;
   font-style: italic;
 }
@@ -388,46 +412,50 @@ tr td:first-child {
 }
 
 .galeria img {
-  width: 300px;
-  height: 210px;
-  margin: 10px;
-  border: 2px solid #cccccc;
-  border-radius: 10px;
+  width: 310px;
+  height: 215px;
+  margin: 8px;
+  border: 4px solid #ffffff;
+  outline: 1px solid #e2e8f0;
+  border-radius: 4px;
 }
 
 .galeria img:hover {
-  opacity: 0.7;
-  border-color: #0b8a8a;
+  opacity: 0.75;
+  border-color: #f77c0c;
 }
 
-/* Primera y última imagen con borde destacado */
+/* Primera y última imagen con borde azul */
 .galeria img:first-child,
 .galeria img:last-child {
-  border-width: 4px;
-  border-color: #273a41;
+  border-color: #00294e;
 }
 
 /* =========================================================
    RETO: SECCIÓN SEGURIDAD EN OBRA
    ========================================================= */
 #seguridad {
-  background-color: #273a41;
+  background-color: #001426;
   background-image: url("../imagenes/fondo.jpg");
   background-repeat: repeat-x;
   background-position: bottom left;
   background-size: 900px;
   background-attachment: local;
-  color: #ffffff;
-  border: 3px solid #0b8a8a;
+  color: #e2e8f0;
+  border: none;
+  border-top: 5px solid #f77c0c;
 }
 
 #seguridad h2 {
   color: #ffffff;
-  border-bottom-color: #f2b441;
+}
+
+#seguridad h2 ~ p {
+  color: #e2e8f0;
 }
 
 #seguridad .destacado {
-  color: hsl(40, 87%, 60%);
+  color: hsl(18, 85%, 63%);
 }
 
 .seguridad-imagenes {
@@ -439,9 +467,9 @@ figure {
   width: 320px;
   margin: 15px;
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 2px solid rgb(11, 138, 138);
-  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 4px;
 }
 
 figure img {
@@ -451,39 +479,45 @@ figure img {
   height: 210px;
   min-height: 100px;
   max-height: 300px;
-  border-radius: 8px;
+  border-radius: 2px;
 }
 
 figcaption {
   font-weight: bold;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-top: 8px;
+  color: #ffffff;
 }
 
 /* Efecto visual :hover del reto */
 figure:hover {
-  background-color: rgba(11, 138, 138, 0.45);
-  border-color: #f2b441;
+  background-color: rgba(247, 124, 12, 0.25);
+  border-color: #f77c0c;
 }
 
 .boton-enlace {
   display: block;
   width: 440px;
   max-width: 100%;
-  margin: 20px auto 0;
-  padding: 12px 20px;
+  margin: 25px auto 0;
+  padding: 14px 20px;
   text-align: center;
-  background-color: #0b8a8a;
+  background-color: #f77c0c;
   color: #ffffff;
   font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
   text-decoration: none;
-  border-radius: 25px;
+  border-radius: 2px;
 }
 
 .boton-enlace:hover {
-  background-color: #f2b441;
-  color: #273a41;
+  background-color: #ffffff;
+  color: #00294e;
+  text-decoration: none;
 }
 
 /* =========================================================
@@ -491,30 +525,34 @@ figure:hover {
    ========================================================= */
 form {
   width: 80%;
-  max-width: 520px;
-  margin: 20px auto;
-  padding: 25px;
-  border: 1px solid #cfc6b4;
-  border-top: 6px solid #0b8a8a;
-  border-radius: 10px;
-  background-color: #fbf9f4;
+  max-width: 540px;
+  margin: 25px auto;
+  padding: 30px;
+  border: 1px solid #e2e8f0;
+  border-top: 5px solid #f77c0c;
+  border-radius: 4px;
+  background-color: #f7f9fb;
 }
 
 label {
   display: block;
   font-weight: bold;
-  color: #273a41;
-  margin-top: 8px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #00294e;
+  margin-top: 10px;
 }
 
 input, textarea {
   width: 100%;
   padding: 12px;
   margin: 8px 0;
-  border: 1px solid #9aa5a8;
-  border-radius: 5px;
-  font-family: Arial, sans-serif;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
   font-size: 15px;
+  background-color: #ffffff;
 }
 
 textarea {
@@ -524,44 +562,46 @@ textarea {
 /* PSEUDOCLASE :focus */
 input:focus,
 textarea:focus {
-  border: 2px solid #0b8a8a;
-  background-color: #eaf6f5;
+  border: 2px solid #f77c0c;
+  background-color: #fff8f1;
   outline: none;
 }
 
 button {
-  padding: 12px 25px;
-  margin: 10px 5px 0 0;
+  padding: 12px 28px;
+  margin: 12px 6px 0 0;
   border: none;
-  border-radius: 5px;
-  background-color: #0b8a8a;
+  border-radius: 2px;
+  background-color: #00294e;
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   cursor: pointer;
 }
 
-/* El botón Limpiar en color pizarra */
+/* El botón Limpiar en gris */
 button + button {
-  background-color: #273a41;
+  background-color: #6c8092;
 }
 
 button:hover {
-  background-color: #076a6b;
+  background-color: #f77c0c;
   color: white;
 }
 
 /* PSEUDOCLASE :active */
 button:active {
-  background-color: #f2b441;
-  color: #273a41;
+  background-color: #f18052;
+  color: #001426;
 }
 
 /* =========================================================
    ENLACES GENERALES
    ========================================================= */
 a:hover {
-  color: #0b8a8a;
+  color: #f77c0c;
   text-decoration: underline;
 }
 
@@ -574,42 +614,48 @@ section .volver {
 }
 
 .volver a {
-  color: #273a41;
+  color: #00294e;
   font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 
 /* =========================================================
    PIE DE PÁGINA
    ========================================================= */
 footer {
-  background-color: #273a41;
-  color: white;
+  background-color: #001426;
+  color: #adc1d4;
   text-align: center;
-  padding: 30px 25px;
-  margin-top: 30px;
-  border-top: 6px solid #0b8a8a;
+  padding: 40px 25px;
+  margin-top: 40px;
+  border-top: 5px solid #f77c0c;
 }
 
 .logo-pie {
   width: 170px;
   height: auto;
   padding: 10px;
-  background-color: #f5f1e8;
-  border-radius: 12px;
-  margin-bottom: 12px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  margin-bottom: 14px;
 }
 
 footer p {
   font-size: 14px;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 .enlaces-externos a {
-  color: #7fc8c5;
+  color: #ffffff;
   margin: 0 10px;
   text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
 }
 
 .enlaces-externos a:hover {
-  color: #f2b441;
+  color: #f77c0c;
 }
