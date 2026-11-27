@@ -41,7 +41,7 @@ p {
    ========================================================= */
 .encabezado {
   background-color: #00294e;
-  background-image: url("../imagenes/inicio1.png");
+  background-image: url("../imagenes/inicio.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -50,24 +50,6 @@ p {
   text-align: center;
   padding: 0 20px 45px;
   border-bottom: 5px solid #f77c0c;
-  /* El fondo cambia de imagen cada 5 segundos */
-  animation: cambio-fondo 15s infinite;
-}
-
-/* Secuencia de imágenes de fondo del inicio */
-@keyframes cambio-fondo {
-  0%, 30% {
-    background-image: url("../imagenes/inicio1.png");
-  }
-  33%, 63% {
-    background-image: url("../imagenes/inicio2.png");
-  }
-  66%, 96% {
-    background-image: url("../imagenes/inicio3.webp");
-  }
-  100% {
-    background-image: url("../imagenes/inicio1.png");
-  }
 }
 
 /* Logo en un recuadro blanco */
