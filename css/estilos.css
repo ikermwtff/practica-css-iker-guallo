@@ -408,5 +408,208 @@ tr td:first-child {
 }
 
 /* =========================================================
+   RETO: SECCIÓN SEGURIDAD EN OBRA
+   ========================================================= */
+#seguridad {
+  background-color: #273a41;
+  background-image: url("../imagenes/fondo.jpg");
+  background-repeat: repeat-x;
+  background-position: bottom left;
+  background-size: 900px;
+  background-attachment: local;
+  color: #ffffff;
+  border: 3px solid #0b8a8a;
+}
+
+#seguridad h2 {
+  color: #ffffff;
+  border-bottom-color: #f2b441;
+}
+
+#seguridad .destacado {
+  color: hsl(40, 87%, 60%);
+}
+
+.seguridad-imagenes {
+  text-align: center;
+}
+
+figure {
+  display: inline-block;
+  width: 320px;
+  margin: 15px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgb(11, 138, 138);
+  border-radius: 12px;
+}
+
+figure img {
+  width: 100%;
+  min-width: 150px;
+  max-width: 300px;
+  height: 210px;
+  min-height: 100px;
+  max-height: 300px;
+  border-radius: 8px;
+}
+
+figcaption {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 8px;
+}
+
+/* Efecto visual :hover del reto */
+figure:hover {
+  background-color: rgba(11, 138, 138, 0.45);
+  border-color: #f2b441;
+}
+
+.boton-enlace {
+  display: block;
+  width: 440px;
+  max-width: 100%;
+  margin: 20px auto 0;
+  padding: 12px 20px;
+  text-align: center;
+  background-color: #0b8a8a;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+.boton-enlace:hover {
+  background-color: #f2b441;
+  color: #273a41;
+}
+
 /* =========================================================
+   FORMULARIO DE CONTACTO
+   ========================================================= */
+form {
+  width: 80%;
+  max-width: 520px;
+  margin: 20px auto;
+  padding: 25px;
+  border: 1px solid #cfc6b4;
+  border-top: 6px solid #0b8a8a;
+  border-radius: 10px;
+  background-color: #fbf9f4;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #273a41;
+  margin-top: 8px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #9aa5a8;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+}
+
+textarea {
+  height: 120px;
+}
+
+/* PSEUDOCLASE :focus */
+input:focus,
+textarea:focus {
+  border: 2px solid #0b8a8a;
+  background-color: #eaf6f5;
+  outline: none;
+}
+
+button {
+  padding: 12px 25px;
+  margin: 10px 5px 0 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #0b8a8a;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* El botón Limpiar en color pizarra */
+button + button {
+  background-color: #273a41;
+}
+
+button:hover {
+  background-color: #076a6b;
+  color: white;
+}
+
+/* PSEUDOCLASE :active */
+button:active {
+  background-color: #f2b441;
+  color: #273a41;
+}
+
 /* =========================================================
+   ENLACES GENERALES
+   ========================================================= */
+a:hover {
+  color: #0b8a8a;
+  text-decoration: underline;
+}
+
+.volver {
+  text-align: center;
+}
+
+section .volver {
+  text-align: center;
+}
+
+.volver a {
+  color: #273a41;
+  font-weight: bold;
+}
+
+/* =========================================================
+   PIE DE PÁGINA
+   ========================================================= */
+footer {
+  background-color: #273a41;
+  color: white;
+  text-align: center;
+  padding: 30px 25px;
+  margin-top: 30px;
+  border-top: 6px solid #0b8a8a;
+}
+
+.logo-pie {
+  width: 170px;
+  height: auto;
+  padding: 10px;
+  background-color: #f5f1e8;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+footer p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.enlaces-externos a {
+  color: #7fc8c5;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.enlaces-externos a:hover {
+  color: #f2b441;
+}
