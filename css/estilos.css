@@ -1,4 +1,42 @@
+/* =========================================================
+   Construyendo Sueños - Constructora
+   Hoja de estilos externa
+   Práctica: Aplicación de estilos y propiedades CSS
+   Paleta tomada del logo:
+     Verde azulado  #0b8a8a   Pizarra  #273a41
+     Crema          #f5f1e8   Ámbar    #f2b441 (acento obra)
+   ========================================================= */
 
+/* ---------- SELECTOR UNIVERSAL ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---------- SELECTOR DE ETIQUETA: body (colores HEX y fuentes) ---------- */
+body {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  background-color: #f5f1e8;
+  color: #273a41;
+}
+
+/* ---------- SELECTOR AGRUPADO ---------- */
+h1, h2, h3 {
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+}
+
+/* ---------- SELECTOR DE ETIQUETA: p (propiedades de texto) ---------- */
+p {
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.8;
+  word-spacing: 3px;
+}
+
+/* =========================================================
+   ENCABEZADO (fondo con imagen)
+   ========================================================= */
 .encabezado {
   background-color: #273a41;
   background-image: url("../imagenes/fondo.jpg");
@@ -12,7 +50,7 @@
   border-bottom: 6px solid #0b8a8a;
 }
 
-
+/* Logo dentro de un círculo crema */
 .logo {
   width: 130px;
   height: 130px;
@@ -23,6 +61,7 @@
   margin-bottom: 12px;
 }
 
+/* Color RGB y transformación de texto */
 h1 {
   color: rgb(255, 255, 255);
   font-size: 42px;
@@ -31,7 +70,7 @@ h1 {
   letter-spacing: 4px;
 }
 
-
+/* SELECTOR HERMANO ADYACENTE: el párrafo que sigue al h1 */
 h1 + p {
   color: hsl(178, 50%, 70%);
   font-style: italic;
@@ -40,7 +79,9 @@ h1 + p {
   margin: 6px 0 22px;
 }
 
-
+/* =========================================================
+   NAVEGACIÓN
+   ========================================================= */
 nav {
   background-color: rgba(39, 58, 65, 0.85);
   padding: 12px;
@@ -50,7 +91,7 @@ nav {
   margin: 0 auto;
 }
 
-
+/* SELECTOR HIJO DIRECTO */
 nav > a {
   color: white;
   text-decoration: none;
@@ -61,18 +102,19 @@ nav > a {
   display: inline-block;
 }
 
+/* PSEUDOCLASE :hover en el menú */
 nav > a:hover {
   background-color: #0b8a8a;
   color: #ffffff;
 }
 
-
+/* PSEUDOCLASE :active en el menú */
 nav > a:active {
   background-color: #f2b441;
   color: #273a41;
 }
 
-
+/* Franja de cifras */
 .cifras {
   list-style: none;
   margin-top: 25px;
@@ -94,7 +136,9 @@ nav > a:active {
   color: #f2b441;
 }
 
-
+/* =========================================================
+   ESTRUCTURA GENERAL DE SECCIONES
+   ========================================================= */
 section {
   background-color: #ffffff;
   width: 90%;
@@ -105,13 +149,14 @@ section {
   border: 1px solid #e0d8c8;
 }
 
-
+/* SELECTOR DE CLASE: contenedor (padding, altura y anchura) */
 .contenedor {
   height: auto;
   padding-top: 35px;
   padding-bottom: 35px;
 }
 
+/* Títulos de sección con color HSL */
 h2 {
   color: hsl(197, 25%, 20%);
   font-size: 30px;
@@ -129,25 +174,25 @@ h3 {
   margin: 20px 0 10px;
 }
 
-
+/* SELECTOR DESCENDIENTE */
 section p {
   text-align: justify;
   margin-bottom: 12px;
 }
 
-
+/* SELECTOR HERMANOS GENERALES: todos los p que siguen a un h2 */
 h2 ~ p {
   letter-spacing: 0.5px;
 }
 
-
+/* SELECTOR DE CLASE */
 .destacado {
   color: hsl(180, 85%, 29%);
   font-weight: bold;
   text-decoration: underline;
 }
 
-
+/* Tarjetas (bordes y márgenes) */
 .tarjeta {
   display: inline-block;
   vertical-align: top;
@@ -179,7 +224,9 @@ h2 ~ p {
   background-color: #eef7f6;
 }
 
-
+/* =========================================================
+   NOSOTROS (selector de ID)
+   ========================================================= */
 #nosotros {
   background-color: #fbf9f4;
   border-left: 8px solid #273a41;
@@ -194,7 +241,7 @@ h2 ~ p {
   text-align: center;
 }
 
-
+/* Lista de valores con pseudoclases */
 ul.lista-valores {
   text-align: left;
   margin: 10px 0 20px 40px;
@@ -205,23 +252,24 @@ ul.lista-valores {
   margin-bottom: 4px;
 }
 
-
+/* PSEUDOCLASE :first-child */
 .lista-valores li:first-child {
   color: #0b8a8a;
   font-weight: bold;
 }
 
-
+/* PSEUDOCLASE :last-child */
 .lista-valores li:last-child {
   color: #b5651d;
 }
 
+/* PSEUDOCLASE :nth-child() */
 .lista-valores li:nth-child(2) {
   background-color: #e6f3f2;
   border-radius: 6px;
 }
 
-
+/* Imágenes que funcionan como enlace */
 .marcas {
   text-align: center;
   margin-top: 20px;
@@ -254,55 +302,111 @@ ul.lista-valores {
   opacity: 0.85;
 }
 
-
-a:hover {
-  color: #0b8a8a;
-  text-decoration: underline;
-}
-
-.volver {
+/* =========================================================
+   SERVICIOS (fondo con color)
+   ========================================================= */
+#servicios {
+  background-color: hsl(177, 40%, 94%);
   text-align: center;
 }
 
-section .volver {
+#servicios > p {
   text-align: center;
 }
 
-.volver a {
-  color: #273a41;
+/* Lista ordenada del proceso */
+ol.lista-proceso {
+  display: inline-block;
+  text-align: left;
+  margin: 10px auto;
+  padding: 15px 20px 15px 45px;
+  border: 2px dotted #273a41;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.lista-proceso li {
+  padding: 4px 0;
+}
+
+.lista-proceso li:nth-child(odd) {
+  color: #076a6b;
   font-weight: bold;
 }
 
+/* =========================================================
+   TABLA DE PROYECTOS
+   ========================================================= */
+table {
+  width: 95%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
 
-footer {
+th, td {
+  border: 1px solid #273a41;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
   background-color: #273a41;
   color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+tr:nth-child(even) {
+  background-color: #eef3f2;
+}
+
+tr:hover td {
+  background-color: #d4ecea;
+}
+
+tr td:first-child {
+  font-weight: bold;
+  text-align: left;
+}
+
+.entregado {
+  color: rgb(11, 138, 138);
+  font-weight: bold;
+}
+
+.ejecucion {
+  color: rgb(181, 101, 29);
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* =========================================================
+   GALERÍA
+   ========================================================= */
+.galeria {
   text-align: center;
-  padding: 30px 25px;
-  margin-top: 30px;
-  border-top: 6px solid #0b8a8a;
 }
 
-.logo-pie {
-  width: 170px;
-  height: auto;
-  padding: 10px;
-  background-color: #f5f1e8;
-  border-radius: 12px;
-  margin-bottom: 12px;
+.galeria img {
+  width: 300px;
+  height: 210px;
+  margin: 10px;
+  border: 2px solid #cccccc;
+  border-radius: 10px;
 }
 
-footer p {
-  font-size: 14px;
-  line-height: 1.6;
+.galeria img:hover {
+  opacity: 0.7;
+  border-color: #0b8a8a;
 }
 
-.enlaces-externos a {
-  color: #7fc8c5;
-  margin: 0 10px;
-  text-decoration: none;
+/* Primera y última imagen con borde destacado */
+.galeria img:first-child,
+.galeria img:last-child {
+  border-width: 4px;
+  border-color: #273a41;
 }
 
-.enlaces-externos a:hover {
-  color: #f2b441;
-}
+/* =========================================================
+/* =========================================================
+/* =========================================================
